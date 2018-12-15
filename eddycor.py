@@ -25,6 +25,9 @@ class Eddycor:
             print dirs
             for dti in dirs:
                 self.doCor(dti)
+#pchu:added the following link for multi-subject run
+                os.chdir("..")
+#pchu:end
         else:
             self.doCor(self.options.dir)
 
